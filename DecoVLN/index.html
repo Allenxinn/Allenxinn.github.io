@@ -1,0 +1,252 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>DecoVLN: Decoupling Observation, Reasoning, and Correction for Vision-and-Language Navigation</title>
+  <link rel="icon" type="image/x-icon" href="static/images/icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+  <!-- Header & Title -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">DecoVLN: Decoupling Observation, Reasoning, and Correction for
+              Vision-and-Language Navigation</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="#">Zihao Xin</a><sup>1</sup>,
+                <a href="#">Wentong Li</a><sup>1,*</sup>,
+                <a href="#">Yixuan Jiang</a><sup>1</sup>,
+                <a href="#">Bin Wang</a><sup>2</sup>,
+                <a href="#">Runmin Cong</a><sup>2</sup>,
+                <a href="#">Jie Qin</a><sup>1, ✉</sup>,
+                <a href="#">Sheng-Jun Huang</a><sup>1,✉</sup>,
+              </span>
+              <span class="author-block">
+                <sup>1</sup>Nanjing University of Aeronautics and Astronautics<br>
+                <sup>2</sup> Shandong University<br> </span>
+              <br>
+              <span class="author-block">
+                <sup>*</sup>Co-first Authors &nbsp;&nbsp;
+                <sup>✉</sup>Corresponding Authors &nbsp;&nbsp; </span>
+            </div>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block"><a href="https://arxiv.org/" target="_blank"
+                    class="button is-normal is-rounded is-dark"><span class="icon"><i
+                        class="fas fa-file-pdf"></i></span><span>Paper</span></a></span>
+                <span class="link-block"><a href="https://github.com/allenxinn" target="_blank"
+                    class="button is-normal is-rounded is-dark"><span class="icon"><i
+                        class="fab fa-github"></i></span><span>Code</span></a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Abstract -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Vision-and-Language Navigation (VLN) requires agents to follow long-horizon instructions and navigate
+              complex 3D environments. However, existing approaches face two major challenges: constructing an effective
+              long-term memory bank and overcoming the compounding errors problem. To address these issues, we propose
+              DecoVLN, an effective framework designed for robust streaming perception and closed-loop control in
+              long-horizon navigation. First, we formulate long-term memory construction as an optimization problem and
+              introduce adaptive refinement mechanism that selects frames from a historical candidate pool by
+              iteratively optimizing a unified scoring function. This function jointly balances three key criteria:
+              semantic relevance to the instruction, visual diversity from the selected memory, and temporal coverage of
+              the historical trajectory. Second, to alleviate compounding errors, we introduce a state-action pair-level
+              corrective finetuning strategy. By leveraging geodesic distance between states to precisely quantify
+              deviation from the expert trajectory, the agent selectively collects high-quality state-action pairs in
+              the trusted region while filtering out the polluted data with low relevance. This improves both the
+              efficiency and stability of error correction. Extensive experiments demonstrate the effectiveness of our
+              DecoVLN, and we have deployed it in real-world environments. Codes and models will be released publicly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="static/images/fig1.png" class="pipeline image" alt="pipeline image" style="margin-bottom: 20px;" />
+        <h2 class="subtitle has-text-centered">
+          <b>The framework of DecoVLN.</b> DecoVLN decouples the agent's observation and reasoning processes. The agent
+          can perceive the environment continuously while in motion and, based on the Adaptive Memory Refinement (AMR)
+          mechanism, it filters and stores high-information-density state representations into a memory bank. During the
+          generation phase, the large language model outputs the action chunk which is comprising multiple consecutive
+          actions—based on the input instruction, the current frame, and the memory bank. Subsequently, we construct an
+          error-correction strategy based on state-action pairs. The model autonomously explores according to the
+          instruction and collects State-Action Pairs within a trusted region for error-correction fine-tuning. This
+          process not only enhances data utilization efficiency but also equips the model with introspective and
+          self-correction capabilities.
+        </h2>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Real World Demos -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Real World Demos</h2>
+        <div style="width: 80%; margin: 0 auto;">
+          <div id="real-world-carousel" class="carousel results-carousel carousel-multi">
+            <div class="item has-text-centered">
+              <video autoplay controls muted loop width="90%" style="margin: 0 auto; border-radius: 8px;">
+                <source src="static/videos/real_1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="item has-text-centered">
+              <video autoplay controls muted loop width="90%" style="margin: 0 auto; border-radius: 8px;">
+                <source src="static/videos/real_2.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="item has-text-centered">
+              <video autoplay controls muted loop width="90%" style="margin: 0 auto; border-radius: 8px;">
+                <source src="static/videos/real_3.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video id="teaser-video" autoplay controls muted loop height="100%">
+          <source src="static/videos/real_4.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Deco -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <br>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div class="content">
+              <h2 class="title is-3">Decoupling Observation and Reasoning</h2>
+              <img src="static/images/current_method.jpg" alt="Comparison with Uniform Sampling"
+                class="center-image blend-img-background" style="margin-bottom: 0px;">
+              <div class="level-set has-text-centered">
+                <p class="has-text-justified" style="margin-bottom: 10px;">
+                  Current paradigm requires storing all historical observation sequences, sampling them during inference, and repeatedly transferring the selected frames between RAM and VRAM.
+                </p>
+              </div>
+              <img src="static/images/deco_method.png" alt="Comparison with Uniform Sampling"
+                class="center-image blend-img-background" style="margin-bottom: 0px;">
+              <div class="level-set has-text-centered">
+                <div class="level-set has-text-centered">
+                  <p class="has-text-justified">
+                    <b>Our DecoVLN, in contrast, introduces an adaptive memory-refinement mechanism during the observation phase. This design selectively preserves high-value semantic information in a VRAM-resident memory bank, which is directly consumed by the VLN model during inference.</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Experimental Results -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div class="content">
+              <h2 class="title is-3">Experimental Results</h2>
+              <h2 class="subtitle is-4">Comparison with SOTA methods</h2>
+              <img src="static/images/main_exp.png" alt="DecoVLN" class="center-image blend-img-background">
+              <div class="level-set has-text-justified">
+                <p class="has-text-justified">
+                  * indicates training with additional large-scale datasets. Our method achieves the best results under
+                  fair settings, without using global priors or multi-sensor inputs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BibTeX citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic
+                Project Page Template</a>, adapted from <a href="https://nerfies.github.io" target="_blank">Nerfies</a>.
+              Feel free to reuse it under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"
+                target="_blank">CC BY‑SA 4.0</a> license.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
