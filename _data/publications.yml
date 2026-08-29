@@ -33,19 +33,28 @@ main:
   - title: "Efficient Semi-DETR: Real Time End-to-End Semi-Supervised Object Detection"
     authors: <strong>Zihao Xin</strong>, Wentong Li, Jie Qin, Shengjun Huang
     conference_short: ECAI
-    conference: European Conference on Artificial Intelligence, 2025.
+    conference: European Conference on Artificial Intelligence(ECAI), 2025.
     pdf: https://ebooks.iospress.nl/doi/10.3233/FAIA251111
     #bibtex:
     image: ./assets/img/paper/effcient_semidetr.png
 
   - title: "Printed Surface Defect Detection Model Based on Positive Samples"
     authors: <strong>Zihao Xin</strong>, Hongyuan Wang, Pengyu Qi, Weidong Du, Fuhua Chen
-    conference: Computers, Materials and Continua (SCI)
+    conference_short: SCI
+    conference: Computers, Materials and Continua (SCI Ⅱ)
     pdf: https://www.sciencedirect.com/org/science/article/pii/S1546221822009535
     image: ./assets/img/paper/printed.jpg
 
   - title: "Snowpoints: Lightweight neural network for point cloud classification"
     authors: <strong>Zihao Xin</strong>, Hongyuan Wang, Ji Zhang
-    conference: Computers and Electrical Engineering (SCI)
+    conference_short: SCI
+    conference: Computers and Electrical Engineering (SCI Ⅱ)
     pdf: https://www.sciencedirect.com/science/article/pii/S0045790622006784
     image: ./assets/img/paper/snowpoint.jpg
+
+  - title: "Efficient Detection Model of Steel Strip Surface Defects Based on YOLO-V7"
+    authors: Yang Wang, Hongyuan Wang,<strong>Zihao Xin</strong>
+    conference_short: SCI
+    conference: IEEE Access
+    pdf: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9994733
+    image: ./assets/img/paper/steelstrip.png
