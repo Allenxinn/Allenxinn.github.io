@@ -1,31 +1,31 @@
 main:
 
   - title: AgentVLN
-    authors:
+    authors: <strong>Zihao Xin</strong>, Wentong Li, Yixuan Jiang, Ziyuan Huang, Bin Wang, Piji Li, Jianke Zhu, Jie Qin, Shengjun Huang
     conference_short: ECCV
     conference: European Conference on Computer Vision <strong>(ECCV)</strong>, 2026.
-    pdf:
-    code:
-    page:
-    bibtex:
-    image:
+    pdf: https://arxiv.org/abs/2603.17670
+    code: https://github.com/Allenxinn/AgentVLN
+    page: https://allenxinn.github.io/AgentVLN/
+    # bibtex:
+    image: ./assets/img/paper/agentvln.gif
 
   - title: IDEAL-VLN
-    authors:
+    authors: <strong>Zihao Xin</strong>, Wentong Li, Yixuan Jiang, Bin Wang, Piji Li, Jianke Zhu, Jie Qin, Shengjun Huang
     conference_short: ICML
     conference: International Conference on Machine Learning <strong>(ICML)</strong>, 2026.
-    pdf:
-    code:
-    page:
-    bibtex:
-    image:
+    pdf: https://openreview.net/pdf/f0798b858dd3855df1a9b4b9073ae1aefd8b97b0.pdf
+    # code:
+    # page:
+    # bibtex:
+    image: ./assets/img/paper/idealvln.gif
 
   - title: DecoVLN
-    authors:
+    authors: <strong>Zihao Xin/strong>, Wentong Li, Yixuan Jiang, Bin Wang, Runmin Cong, Jie Qin, Shengjun Huang
     conference_short: CVPR
     conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2026.
-    pdf:
-    code:
-    page:
-    bibtex:
-    image:
+    pdf: https://arxiv.org/pdf/2603.13133
+    # code:
+    page: https://allenxinn.github.io/DecoVLN/
+    #bibtex:
+    image: ./assets/img/paper/decovln.gif
