@@ -1,0 +1,31 @@
+main:
+
+  - title: AgentVLN
+    authors:
+    conference_short: ECCV
+    conference: European Conference on Computer Vision <strong>(ECCV)</strong>, 2026.
+    pdf:
+    code:
+    page:
+    bibtex:
+    image:
+
+  - title: IDEAL-VLN
+    authors:
+    conference_short: ICML
+    conference: International Conference on Machine Learning <strong>(ICML)</strong>, 2026.
+    pdf:
+    code:
+    page:
+    bibtex:
+    image:
+
+  - title: DecoVLN
+    authors:
+    conference_short: CVPR
+    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2026.
+    pdf:
+    code:
+    page:
+    bibtex:
+    image:
