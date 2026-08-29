@@ -18,3 +18,13 @@ I am a third-year Ph.D. student in the College of Computer Science and Technolog
 - **[Feb. 2026]** DecoVLN was accepted to CVPR 2026.
 
 {% include_relative _includes/publications.md %}
+
+## Honors
+- Outstanding Graduates, 2023
+- Outstanding Student of Jiangsu Province, 2022
+- National Scholarship for Graduate Students, 2022
+- National Scholarship for Graduate Students, 2021
+- Third Prize, RoboMaster ICRA AI Challenge, 2022
+- First Prize, Huawei DIGIX Global AI Challenge, 2021
+- Starlight Excellence Award, Huawei DIGIX Global AI Challenge, 2021
+- Outstanding Postgraduate Student, 2021-2023
