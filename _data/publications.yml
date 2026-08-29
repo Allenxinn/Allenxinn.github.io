@@ -1,6 +1,6 @@
 main:
 
-  - title: AgentVLN
+  - title: "AgentVLN: Towards Agentic Vision-and-Language Navigation"
     authors: <strong>Zihao Xin</strong>, Wentong Li, Yixuan Jiang, Ziyuan Huang, Bin Wang, Piji Li, Jianke Zhu, Jie Qin, Shengjun Huang
     conference_short: ECCV
     conference: European Conference on Computer Vision <strong>(ECCV)</strong>, 2026.
@@ -10,7 +10,7 @@ main:
     # bibtex:
     image: ./assets/img/paper/agentvln.gif
 
-  - title: IDEAL-VLN
+  - title: "Instruction Decomposition and Action Alignment for Vision-and-Language Navigation"
     authors: <strong>Zihao Xin</strong>, Wentong Li, Yixuan Jiang, Bin Wang, Piji Li, Jianke Zhu, Jie Qin, Shengjun Huang
     conference_short: ICML
     conference: International Conference on Machine Learning <strong>(ICML)</strong>, 2026.
@@ -20,8 +20,8 @@ main:
     # bibtex:
     image: ./assets/img/paper/idealvln.gif
 
-  - title: DecoVLN
-    authors: <strong>Zihao Xin/strong>, Wentong Li, Yixuan Jiang, Bin Wang, Runmin Cong, Jie Qin, Shengjun Huang
+  - title: "DecoVLN: Decoupling Observation, Reasoning, and Correction for Vision-and-Language Navigation"
+    authors: <strong>Zihao Xin</strong>, Wentong Li, Yixuan Jiang, Bin Wang, Runmin Cong, Jie Qin, Shengjun Huang
     conference_short: CVPR
     conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2026.
     pdf: https://arxiv.org/pdf/2603.13133
